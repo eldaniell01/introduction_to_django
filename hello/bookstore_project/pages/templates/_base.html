@@ -18,19 +18,19 @@
             <nav class="my-2 my-md-0 mr-md-3 ms-auto">
                 <a class="p-2 text-dark text-decoration-none" href="{% url "about" %}">About</a>
                 {% if user.is_authenticated %}
-                    <a class="p-2 text-dark text-decoration-none" href="{% url 'logout' %}">Log Out</a>
+                    <a class="p-2 text-dark text-decoration-none" href="{% url 'account_logout' %}">Log Out</a>
                 {% else %}
-                    <a class="p-2 text-dark text-decoration-none" href="{% url 'login' %}">Log In</a>
-                    <a class="btn btn-outline-primary text-decoration-none" href="{% url 'signup' %}">Sign Up</a>
+                    <a class="p-2 text-dark text-decoration-none" href="{% url 'account_login' %}">Log In</a>
+                    <a class="btn btn-outline-primary text-decoration-none" href="{% url 'account_signup' %}">Sign Up</a>
                 {% endif %}
             </nav>
         </div>
     </header>
     
     <div class="container">
-    {% block content %}
-    
-    {% endblock content %}
+        {% block content %}
+        
+        {% endblock content %}
 
     </div>
 </body>
