@@ -10,6 +10,7 @@ django-bootstrap-v5==1.0.11
 django-crispy-forms==2.4
 filelock==3.18.0
 packaging==25.0
+pillow==11.3.0
 pipenv==2025.0.4
 platformdirs==4.3.8
 psycopg2-binary==2.9.10
