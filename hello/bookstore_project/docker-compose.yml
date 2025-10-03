@@ -5,6 +5,8 @@ services:
     environment:
       - SECRET_KEY=django-insecure-ib$dj5j#la7671+x5cz)+d@k8xqb346j3giok3)^z=!#t&8=%7
       - DEBUG=1
+      - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_51SCZ3EIcDBT5z9YA3TKi78BhsPahaScHh9W5vtW6MN4LJy91LYPSiQIvGh2lGdalOcjuMnR0bNrn1LE7VzMtgyqH00Z0Mj9Kn8
+      - STRIPE_TEST_SECRET_KEY=${STRIPE_TEST_SECRET_KEY}
     volumes:
       - .:/code
     ports:
