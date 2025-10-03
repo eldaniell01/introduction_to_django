@@ -4,6 +4,11 @@
  {% block title %}HOME{% endblock title %}
  {% block content %}
     <h1>Homepage</h1>
+
+    <form class="form-inline mt-2 mt-md-0" action="{% url "search_results" %}" method="get">
+        <input name="q" class="form-control mr-sm-2" type="text" placeholder="search" aria-labe="Search">
+    </form>
+
     <img class="bookcover" src="{% static 'images/20250615_082131.jpg' %}"></img>
     {% if user.is_authenticated %}
         hola {{user.email}}!
