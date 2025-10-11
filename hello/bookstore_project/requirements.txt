@@ -5,12 +5,14 @@ charset-normalizer==3.4.3
 crispy-bootstrap4==2025.6
 crispy-bootstrap5==2025.6
 distlib==0.4.0
+dj-database-url==3.0.1
 Django==4.2.24
 django-allauth==65.11.2
 django-bootstrap-v5==1.0.11
 django-crispy-forms==2.4
 django-debug-toolbar==6.0.0
 filelock==3.18.0
+gunicorn==23.0.0
 idna==3.10
 packaging==25.0
 pillow==11.3.0
@@ -25,3 +27,4 @@ stripe==12.5.1
 typing_extensions==4.15.0
 urllib3==2.5.0
 virtualenv==20.33.1
+whitenoise==6.11.0
